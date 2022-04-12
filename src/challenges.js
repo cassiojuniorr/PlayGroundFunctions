@@ -61,10 +61,20 @@ function highestCount(numbers) {
 
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  
+  let d1 = Math.abs(mouse - cat1);
+  let d2 = Math.abs(mouse - cat2);
+
+  if (d1 < d2) {
+    return 'cat1';
+  } else if (d1 > d2) {
+    return 'cat2';
+  } else if (d1 == d2) {
+    return 'os gatos trombam e o rato foge';
+  }
 }
+  
 
 // Desafio 8
 function fizzBuzz() {
