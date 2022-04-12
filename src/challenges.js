@@ -95,16 +95,52 @@ function fizzBuzz(numbers) {
 }
 
 // Desafio 9
-function encode() {
+function encode(pa1) {
   // seu código aqui
+  let cha = '';
+  for (let index = 0; index < pa1.length; index++){
+    if (pa1[index] == 'a'){
+      cha += 1;
+    } else if (pa1[index] == 'e'){
+      cha += 2;
+    } else if (pa1[index] == 'i'){
+      cha += 3;
+    } else if (pa1[index] == 'o'){
+      cha += 4;
+    } else if (pa1[index] == 'u'){
+      cha += 5;
+    } else {
+      cha += pa1[index];
+    }
+  }
+  return cha;
 }
-function decode() {
+
+function decode(pa2) {
   // seu código aqui
+  let ach = '';
+  for (let cont = 0; cont < pa2.length; cont++){
+    if (pa2[cont] == 1){
+      ach += 'a';
+    } else if (pa2[cont] == 2){
+      ach += 'e';
+    } else if (pa2[cont] == 3){
+      ach += 'i';
+    } else if (pa2[cont] == 4){
+      ach += 'o';
+    } else if (pa2[cont] == 5){
+      ach += 'u';
+    } else {
+      ach += pa2[cont];
+    }
+  }
+  return ach;
 }
 
 // Desafio 10
 function techList() {
   // seu código aqui
+  
 }
 
 module.exports = {
